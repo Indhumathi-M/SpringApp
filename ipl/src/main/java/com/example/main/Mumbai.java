@@ -4,7 +4,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Mumbai {
+public class Mumbai implements Team{
 	@Autowired
 	private JdbcTemplate template;  
 	  

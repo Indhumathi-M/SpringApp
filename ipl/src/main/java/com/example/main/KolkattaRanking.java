@@ -10,7 +10,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
-public class KolkattaRanking {
+public class KolkattaRanking implements TeamRanking{
 List <PlayerEntity> p=new ArrayList<PlayerEntity>(Arrays.asList(new PlayerEntity("Kolkatta","Goutam",13,4,6,50)));
 	
 	@Autowired

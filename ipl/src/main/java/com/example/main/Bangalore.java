@@ -6,7 +6,7 @@ import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Service;
 
 @Service
-public class Bangalore {
+public class Bangalore implements Team {
 	@Autowired
 	private JdbcTemplate template;  
 	  
@@ -47,7 +47,6 @@ public class Bangalore {
 	public int delete(int run,int jersyno,PlayerEntity pe){ 
 		
 				String sql="UPDATE bangalore SET total=total-'"+run+"'WHERE jersy_no=?";  
-			    return template.update(sql,pe.getNum()); 
-			     
+			    return template.update(sql,pe.getNum());      
 	}
 }
